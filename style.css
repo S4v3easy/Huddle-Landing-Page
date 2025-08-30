@@ -1,0 +1,163 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(257, 40%, 49%);
+    background-size: cover;
+    font-family: "Varela Round", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*Work on the header*/
+.logo-image {
+    width: auto;
+    height: 40px;
+}
+
+header {
+    padding: 35px;
+    display: flex;
+}
+
+/*Work on the header*/
+
+/*Work on the main content: main image*/
+main {
+    width: auto;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.image-container {
+    padding: 35px;
+}
+
+/*Work on the main content: main image*/
+
+/*Work on the main content: text part*/
+.text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.text-box h2 {
+    color: white;
+    text-align: center;
+}
+
+.text-box h3 {
+    color: white;
+    text-align: center;
+    font-weight: 50;
+}
+
+.text-box a {
+    padding: 12px 60px;
+    border-radius: 20px;
+    background: white;
+    text-decoration: none;
+    font: inherit;
+    font-size: 0.9rem;
+    color: hsl(257, 40%, 49%);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+    margin: 5px auto;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.text-box a:hover {
+    transform: scale(1.05);
+}
+
+/*Work on the main content: text part*/
+
+/*Work on the footer*/
+footer {
+    height: 80px; /* Give a fixed and defined height, not 100% */
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Horizontally center the social container */
+    align-items: center; /* Vertically center the social container */
+    margin: 40px auto;
+}
+
+.social-media-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.social-media-container img {
+    height: 32px;
+    width: 32px;
+}
+
+/*Work on the footer*/
+
+@media (min-width: 850px) {
+    body {
+        background-image: url(images/bg-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+    }
+
+    main {
+        width: 90%;
+        display: flex;
+        max-width: 1440px;
+        margin: 0 auto;
+        flex: 1;
+    }
+
+    .image-container {
+        flex: 1;
+    }
+
+    .text-box {
+        flex: 1;
+        max-width: 650px;
+    }
+
+    .text-box h2 {
+        text-align: left;
+    }
+
+    .text-box-h2 {
+        width: 100%;
+    }
+
+    .text-box h3 {
+        text-align: left
+    }
+
+    .button-container {
+        align-self: flex-start;
+    }
+
+    footer {
+        justify-content: flex-end;
+        max-width: 1440px;
+    }
+
+    .social-media-container {
+        margin-right: 50px;
+    }
+}
+
